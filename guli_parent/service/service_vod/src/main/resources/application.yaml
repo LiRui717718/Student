@@ -1,0 +1,28 @@
+# 服务端口
+server:
+  port: 8003
+
+spring:
+  application:
+    name: service-vod  # 服务名
+
+  profiles:
+    active: dev  #环境设置
+
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+
+
+aliyun:
+  vod:
+    file:
+      keyid: LTAI5tM83ptKjXSPq1kB1Yc6 # 权限的ID
+      keysecret: DouODuOljS8NmU0UuwF7Xz5RrYDPnE # 权限名
